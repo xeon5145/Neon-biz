@@ -12,6 +12,31 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+                <!-- Add Tailwind CSS via CDN for styling -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'blue': {
+                                50: '#eff6ff',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8'
+                            },
+                            'emerald': {
+                                400: '#34d399',
+                                500: '#10b981',
+                                600: '#059669'
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
@@ -37,28 +62,30 @@
                     </div>
 
                     <!-- Navigation Links -->
-                    @if (Route::has('login'))
-                        <nav class="flex items-center space-x-4">
-                            @auth
-                                <a href="{{ url('/dashboard') }}" 
-                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
-                                    Dashboard
-                                </a>
-                            @else
-                                <a href="{{ route('login') }}" 
-                                   class="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                                    Log in
-                                </a>
+            @if (Route::has('login'))
+                <nav class="flex items-center justify-end gap-4">
+                    @auth
+                        <a
+                            href="{{ url('/dashboard') }}"
+                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal"
+                        >
+                            Dashboard
+                        </a>
+                    @else
+                        <a href="{{ route('login') }}" class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal">
+                            Log in
+                        </a>
 
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" 
-                                       class="inline-flex items-center px-4 py-2 border border-blue-600 text-sm font-medium rounded-md text-blue-600 bg-transparent hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
-                                        Get Started
-                                    </a>
-                                @endif
-                            @endauth
-                        </nav>
-                    @endif
+                        @if (Route::has('register'))
+                            <a
+                                href="{{ route('register') }}"
+                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                                Register
+                            </a>
+                        @endif
+                    @endauth
+                </nav>
+            @endif
                 </div>
             </div>
         </header>
@@ -375,29 +402,6 @@
             </div>
         </footer>
 
-        <!-- Add Tailwind CSS via CDN for styling -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                darkMode: 'class',
-                theme: {
-                    extend: {
-                        colors: {
-                            'blue': {
-                                50: '#eff6ff',
-                                500: '#3b82f6',
-                                600: '#2563eb',
-                                700: '#1d4ed8'
-                            },
-                            'emerald': {
-                                400: '#34d399',
-                                500: '#10b981',
-                                600: '#059669'
-                            }
-                        }
-                    }
-                }
-            }
-        </script>
+
     </body>
 </html>
