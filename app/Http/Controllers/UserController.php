@@ -9,24 +9,26 @@ class UserController extends Controller
 {
     public function userDashboard()
     {
-
-        if(!(Auth::check()))
-        {
+        // Checking if user is logged in
+        if (!(Auth::check())) {
             return redirect('login');
         }
+        // Checking if user is logged in
 
+        // Picking dashboard
         switch (Auth::user()->user_type) {
             case '1':
                 return view('adminDashboard');
-            break;
-                
+                break;
+
             case '2':
                 return view('clientDashboard');
-            break;
-                
+                break;
+
             default:
                 return view('clientDashboard');
-            break;
+                break;
         }
+        // Picking dashboard
     }
 }
