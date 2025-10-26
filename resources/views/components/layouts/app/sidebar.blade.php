@@ -11,17 +11,21 @@
                  <h4>NeonBiz</h4>
             </a>
 
+            <!-- System -->
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
+            <!-- System -->
 
-                        <flux:navlist variant="outline">
-                <flux:navlist.group :heading="__('Platform')" class="grid">
+            <!-- Modules -->
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Modules')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Inventory') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
+            <!-- Modules -->
 
             <flux:spacer />
 
