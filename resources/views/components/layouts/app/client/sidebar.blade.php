@@ -22,7 +22,8 @@
             <!-- Modules -->
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Modules')" class="grid">
-                    <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Inventory') }}</flux:navlist.item>
+                    <flux:navlist.item icon="square-3-stack-3d" :href="route('inventory.dashboard')" :current="request()->routeIs('inventory.dashboard')" wire:navigate>{{ __('Inventory') }}</flux:navlist.item>
+                    <flux:navlist.item icon="document-text" :href="route('invoice.dashboard')" :current="request()->routeIs('invoice.dashboard')" wire:navigate>{{ __('Invoice Management') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
             <!-- Modules -->
