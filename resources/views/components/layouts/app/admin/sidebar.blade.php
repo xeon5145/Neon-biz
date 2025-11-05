@@ -22,7 +22,7 @@
             <!-- Categories -->
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Categories')" class="grid">
-                    <flux:navlist.item icon="users" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Clients') }}</flux:navlist.item>
+                    <flux:navlist.item icon="users" :href="route('client-management.dashboard')" :current="request()->routeIs('client-management.dashboard')" wire:navigate>{{ __('Clients') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
             <!-- Categories -->

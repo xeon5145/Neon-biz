@@ -10,6 +10,7 @@ use App\Http\Controllers\UserController;
 // Common Controllers
 
 // Admin Controllers
+use App\Http\Controllers\Admin\Modules\ClientManagementController;
 // Admin Controllers
 
 // Client Controllers
@@ -39,6 +40,8 @@ Route::middleware(['admin'])->group(function () {
             ),
         )
         ->name('two-factor.show');
+
+    Route::get('clientManagement/dashboard', [ClientManagementController::class, 'Index'])->name('client-management.dashboard');
 });
 // Admin Routes
 
