@@ -7,9 +7,9 @@
                 <p class="text-gray-600 dark:text-gray-400 mt-1">Manage and track all your invoices</p>
             </div>
             <div class="flex gap-3">
-                <flux:button variant="outline" icon="funnel">Filter</flux:button>
-                <flux:button variant="outline" icon="arrow-down-tray">Export</flux:button>
-                <flux:button variant="primary" icon="plus" class="shadow-lg">Create Invoice</flux:button>
+                <x-ui.button variant="outline" icon="funnel">Filter</x-ui.button>
+                <x-ui.button variant="outline" icon="arrow-down-tray">Export</x-ui.button>
+                <x-ui.button variant="primary" icon="plus" class="shadow-lg">Create Invoice</x-ui.button>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="p-3 bg-blue-100 dark:bg-blue-900/50 rounded-xl">
-                            <flux:icon name="document-text" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                            <x-ui.icon name="document-text" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
                         </div>
                         <div class="ml-4">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Invoices</p>
@@ -34,7 +34,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="p-3 bg-green-100 dark:bg-green-900/50 rounded-xl">
-                            <flux:icon name="check-circle" class="w-6 h-6 text-green-600 dark:text-green-400" />
+                            <x-ui.icon name="check-circle" class="w-6 h-6 text-green-600 dark:text-green-400" />
                         </div>
                         <div class="ml-4">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Paid</p>
@@ -52,7 +52,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="p-3 bg-yellow-100 dark:bg-yellow-900/50 rounded-xl">
-                            <flux:icon name="clock" class="w-6 h-6 text-yellow-600 dark:text-yellow-400" />
+                            <x-ui.icon name="clock" class="w-6 h-6 text-yellow-600 dark:text-yellow-400" />
                         </div>
                         <div class="ml-4">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Pending</p>
@@ -70,7 +70,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="p-3 bg-red-100 dark:bg-red-900/50 rounded-xl">
-                            <flux:icon name="exclamation-circle" class="w-6 h-6 text-red-600 dark:text-red-400" />
+                            <x-ui.icon name="exclamation-circle" class="w-6 h-6 text-red-600 dark:text-red-400" />
                         </div>
                         <div class="ml-4">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Overdue</p>
@@ -93,11 +93,11 @@
                         <h3 class="text-lg font-semibold">Quick Invoice</h3>
                         <p class="text-blue-100 text-sm mt-1">Create invoice in seconds</p>
                     </div>
-                    <flux:icon.bolt class="w-8 h-8 text-blue-200" />
+                    <x-ui.icon.bolt class="w-8 h-8 text-blue-200" />
                 </div>
-                <flux:button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-blue-600">
+                <x-ui.button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-blue-600">
                     Start Now
-                </flux:button>
+                </x-ui.button>
             </div>
 
             <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-xl text-white shadow-lg">
@@ -106,11 +106,11 @@
                         <h3 class="text-lg font-semibold">Payment Reminder</h3>
                         <p class="text-green-100 text-sm mt-1">Send automated reminders</p>
                     </div>
-                    <flux:icon name="bell" class="w-8 h-8 text-green-200" />
+                    <x-ui.icon name="bell" class="w-8 h-8 text-green-200" />
                 </div>
-                <flux:button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-green-600">
+                <x-ui.button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-green-600">
                     Send Reminders
-                </flux:button>
+                </x-ui.button>
             </div>
 
             <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 rounded-xl text-white shadow-lg">
@@ -119,11 +119,11 @@
                         <h3 class="text-lg font-semibold">Reports</h3>
                         <p class="text-purple-100 text-sm mt-1">View detailed analytics</p>
                     </div>
-                    <flux:icon name="chart-bar" class="w-8 h-8 text-purple-200" />
+                    <x-ui.icon name="chart-bar" class="w-8 h-8 text-purple-200" />
                 </div>
-                <flux:button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-purple-600">
+                <x-ui.button variant="outline" class="mt-4 text-white border-white hover:bg-white hover:text-purple-600">
                     View Reports
-                </flux:button>
+                </x-ui.button>
             </div>
         </div>
 
@@ -135,7 +135,7 @@
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Recent Invoices</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Latest invoice activity</p>
                     </div>
-                    <flux:button variant="ghost" size="sm">View All</flux:button>
+                    <x-ui.button variant="ghost" size="sm">View All</x-ui.button>
                 </div>
             </div>
             <div class="p-6">
@@ -144,7 +144,7 @@
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
                                 <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
-                                    <flux:icon name="document" class="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                                    <x-ui.icon name="document" class="w-5 h-5 text-blue-600 dark:text-blue-400" />
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -165,7 +165,7 @@
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
                                 <div class="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/50 rounded-lg flex items-center justify-center">
-                                    <flux:icon name="document" class="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
+                                    <x-ui.icon name="document" class="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -186,7 +186,7 @@
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
                                 <div class="w-10 h-10 bg-red-100 dark:bg-red-900/50 rounded-lg flex items-center justify-center">
-                                    <flux:icon name="document" class="w-5 h-5 text-red-600 dark:text-red-400" />
+                                    <x-ui.icon name="document" class="w-5 h-5 text-red-600 dark:text-red-400" />
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -207,7 +207,7 @@
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
                                 <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
-                                    <flux:icon name="document" class="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                                    <x-ui.icon name="document" class="w-5 h-5 text-blue-600 dark:text-blue-400" />
                                 </div>
                             </div>
                             <div class="flex-1">
@@ -227,10 +227,10 @@
 
                 <!-- Empty State (hidden when there are invoices) -->
                 <div class="hidden text-center py-12">
-                    <flux:icon name="document-text" class="w-12 h-12 text-gray-400 dark:text-gray-600 mx-auto mb-4" />
+                    <x-ui.icon name="document-text" class="w-12 h-12 text-gray-400 dark:text-gray-600 mx-auto mb-4" />
                     <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">No invoices yet</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-6">Get started by creating your first invoice</p>
-                    <flux:button variant="primary" icon="plus">Create Your First Invoice</flux:button>
+                    <x-ui.button variant="primary" icon="plus">Create Your First Invoice</x-ui.button>
                 </div>
             </div>
         </div>

@@ -52,15 +52,15 @@
                         </div>
 
                         @error('code')
-                            <flux:text color="red">
+                            <x-ui.text color="red">
                                 {{ $message }}
-                            </flux:text>
+                            </x-ui.text>
                         @enderror
                     </div>
 
                     <div x-show="showRecoveryInput">
                         <div class="my-5">
-                            <flux:input
+                            <x-ui.input
                                 type="text"
                                 name="recovery_code"
                                 x-ref="recovery_code"
@@ -71,19 +71,19 @@
                         </div>
 
                         @error('recovery_code')
-                            <flux:text color="red">
+                            <x-ui.text color="red">
                                 {{ $message }}
-                            </flux:text>
+                            </x-ui.text>
                         @enderror
                     </div>
 
-                    <flux:button
+                    <x-ui.button
                         variant="primary"
                         type="submit"
                         class="w-full"
                     >
                         {{ __('Continue') }}
-                    </flux:button>
+                    </x-ui.button>
                 </div>
 
                 <div class="mt-5 space-x-0.5 text-sm leading-5 text-center">

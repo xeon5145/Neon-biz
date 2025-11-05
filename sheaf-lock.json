@@ -1,0 +1,13 @@
+{
+    "files": {
+        "resources/js/utils.js": [
+            "dark-theme"
+        ]
+    },
+    "helpers": [],
+    "internalDependencies": {
+        "icon": [
+            "button"
+        ]
+    }
+}
